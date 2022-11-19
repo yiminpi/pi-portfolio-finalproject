@@ -1,0 +1,159 @@
+
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "silka";
+  src: url(fonts/silka-regular-webfont.woff);
+}
+
+@font-face{
+  font-family: "silka medium";
+  src: url(fonts/Silka-Medium.ttf);
+}
+
+@font-face {
+  font-family: "made gentle";
+  src: url(fonts/made_gentle.otf);
+}
+
+
+
+html {
+  --light-gray: #F7F2F2;
+  --gray: #EDE9E9;
+  --dark-gray: #87888B;
+  --cyan-gray: #8A949E;
+  --black: #0D1116;
+  --orange: #EC7B5B;
+  --red: #F44C1F;
+  --snow: #F0F2F8;
+  --onyx: #30363D;
+  --glossy-black: #0D1116;
+  --dark-black: #0A0C10;
+  --font-silka-regular: "silka";
+  --font-silka-medium: "silka medium";
+  --font-made-gentile: "made gentle";
+}
+
+a{
+  text-decoration: none;
+  color: var(--glossy-black);
+}
+
+h1{
+  font-size: 40px;
+}
+
+h2{
+  font-size: 28px;
+}
+h3{
+  font-size: 18px;
+}
+
+.component_page {
+  font-family: Arial, sans-serif;
+  display: grid;
+  grid-template-columns: 200px 1fr;
+}
+
+
+.content-container{
+  width: 1000px;
+}
+/*reference images sizes*/
+.typography-img__body{
+  width: 800px;
+}
+
+.typography-img__navtext{
+  width: 300px;
+}
+
+.typography-img__headertext{
+  width: 300px;
+}
+
+.header-img{
+  width: 500px;
+}
+
+.nav{
+  display: inline-block;
+}
+.main{
+  display: inline-block;
+}
+
+.typography-code__body{
+  font-family: "silka";
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.typography-code__nav{
+  font-family: "silka medium";
+  font-size: 16px;
+}
+
+.typography-code__header{
+  font-family: "made gentle";
+  font-size: 18px;
+}
+
+
+.typography a{
+  color: var(--orange);
+}
+
+.header-wordmark{
+  font-family: "made gentle";
+  font-size: 40px;
+  color: var(--orange);
+}
+
+.header-navlist{
+  display: inline-flex;
+  list-style: none;
+  font-size: 14px;
+  color: var(--black);
+  padding: 5px;
+  margin: 0;
+  background-color: var(--gray);
+  border-radius: 24px;
+  font-family: "silka medium";
+}
+
+.header-navitem{
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: var(--gray);
+  border-radius: 24px;
+}
+
+.navitem--active{
+  background-color: white;
+}
+
+
+.header-contact{
+  display: inline-block;
+  padding: 20px;
+  font-family: "silka medium";
+  background-color: var(--light-gray);
+  color: var(--black);
+}
+
+
+
+
+
+
+
+
+
