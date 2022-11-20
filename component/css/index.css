@@ -40,9 +40,12 @@ html {
   --font-made-gentile: "made gentle";
 }
 
+/************************* design system page designs *************************/
+
+/**** global text designs ****/
 a{
   text-decoration: none;
-  color: var(--glossy-black);
+  color: var(--snow);
 }
 
 h1{
@@ -54,18 +57,64 @@ h2{
 }
 h3{
   font-size: 18px;
+  margin: 8px 0;
 }
 
 .component_page {
   font-family: Arial, sans-serif;
-  display: grid;
-  grid-template-columns: 200px 1fr;
+  height: 100%;
+  overflow: auto;
+  background-color: var(--light-gray);
 }
 
 
 .content-container{
   width: 1000px;
 }
+
+/**** navigation bar ****/
+.wordmark{
+  font-family: "made gentle";
+  font-size: 40px;
+  color: var(--orange);
+}
+
+.nav-list{
+  list-style: none;
+  padding: 0;
+  font-size: 18px;
+  line-height: 36px;
+}
+
+.nav-sub{
+  list-style: none;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.nav-item--header{
+  margin-bottom: 30px;
+}
+
+.nav-sub a{
+  color: var(--dark-gray);
+}
+
+.nav-container{
+  padding: 0px 24px;
+}
+
+/**** content designs ****/
+.content-container{
+  padding: 10px 24px;
+}
+
+.hero{
+
+}
+
+
+
 /*reference images sizes*/
 .typography-img__body{
   width: 800px;
@@ -84,17 +133,35 @@ h3{
 }
 
 .nav{
-  display: inline-block;
+  position: fixed;
+  left: 0;
+  float: left;
+  width: 20%;
+  height: 100%;
+  overflow: auto;
+  background-color: var(--dark-black);
 }
 .main{
-  display: inline-block;
+    float: right;
+    width: 80%;
+    height: 100%;
+    overflow: auto;
 }
+
+.design-container{
+  background: white;
+  padding: 20px;
+  margin-bottom: 30px;
+  box-shadow: 10px 5px 5px var(--gray);
+}
+
 
 .typography-code__body{
   font-family: "silka";
   font-size: 16px;
   line-height: 28px;
 }
+
 
 .typography-code__nav{
   font-family: "silka medium";
@@ -105,7 +172,6 @@ h3{
   font-family: "made gentle";
   font-size: 18px;
 }
-
 
 .typography a{
   color: var(--orange);

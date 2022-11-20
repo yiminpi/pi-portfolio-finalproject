@@ -9,24 +9,24 @@
   </head>
   <body class="component_page">
     <nav class="nav">
-        <div>
+        <div class="nav-container">
             <p class="wordmark">Pi</p>
             <ul class="nav-list">
-                <li class="nav-main"><a href="index.html#typography">Typography</a></li>
+                <li><a href="index.html#typography">Typography</a></li>
                 <ul class="nav-sub">
                     <li><a href="index.html#silka_regular">Silka Regular</a></li>
                     <li><a href="index.html#silka_medium">Silka Medium</a></li>
                     <li><a href="index.html#made_gentle">Made Gentle</a></li>
                     <li><a href="index.html#links">Links</a></li>
                 </ul>
-                <li class="nav-main"><a href="index.html#header_atoms">Header Atoms</a></li>
+                <li><a href="index.html#header_atoms">Header Atoms</a></li>
                 <ul class="nav-sub">
                     <li><a href="index.html#wordmark">Wordmark</a></li>
                     <li><a href="index.html#nav_list">Nav List</a></li>
                     <li><a href="index.html#contact">Contact</a></li>
                 </ul>
-                <li class="nav-main"><a href="index.html#header">Header</a></li>
-                <li class="nav-main"><a href="content_atoms">Content Atoms</a></li>
+                <li class="nav-item--header" ><a href="index.html#header">Header</a></li>
+                <li><a href="content_atoms">Content Atoms</a></li>
                 <ul class="nav-sub">
                     <li><a href="#buttons">Buttons</a></li>
                     <li><a href="index.html#cards">Cards</a></li>
@@ -36,55 +36,55 @@
     </nav>
     <main class="main">
         <div class="content-container">
-            <section>
-                <h1>Pi's Case Study Design System</h1>
+            <section class="hero">
+                <h1>Web Design System</h1>
                             <p>This is a collection of components based on my study of the design system of the <a href="#">Rob's website</a>
                             </p>
                         </section>
                 <div class="typography">
                     <h2 id="typography">Typography</h2>
-                                    <h3 id="silka_regular">Silka Regular</h3>
-                                    <p>Used for body copy and buttons</p>
-                                    <img class="typography-img__body" src="imgs/bodycopy.png" alt="example of body copy">
-                                    <p class="typography-code__body">A short personal history as it relates to design and development, and how I've found value in the cross-section between both disciplines.</p>
-                                    <h3 id="silka_medium">Silka Medium</h3>
-                                    <p>Used for main navigation and sub notes.</p>
-                                    <img class="typography-img__navtext" src="imgs/navtext.png" alt="example of nav text">
-                                    <p class="typography-code__nav">Home About Projects Tools</p>
-                                    <h3 id="made_gentle">Made Gentle</h3>
-                                    <p>Used for Wordmark and section headers.</p>
-                                        <img class="typography-img__headertext" src="imgs/section_title.png" alt="example of section title">
-                                        <p class="typography-code__header">How it started vs. how it's going</p>
-                                    <h3 class="typography-code__links" id="links">Links</h3>
-                                    <a href="#">#AI</a> <a href="#">#Animation</a> <a href="#">#App</a> <a href="#">#Builder</a>
+                                    <div class="design-container"><h3 id="silka_regular">Silka Regular</h3>
+                                                                        <p>Used for body copy and buttons</p>
+                                                                        <img class="typography-img__body" src="imgs/bodycopy.png" alt="example of body copy">
+                                                                        <p class="typography-code__body">A short personal history as it relates to design and development, and how I've found value in the cross-section between both disciplines.</p></div>
+                                    <div class="design-container"><h3 id="silka_medium">Silka Medium</h3>
+                                                                        <p>Used for main navigation and sub notes.</p>
+                                                                        <img class="typography-img__navtext" src="imgs/navtext.png" alt="example of nav text">
+                                                                        <p class="typography-code__nav">Home About Projects Tools</p></div>
+                                    <div class="design-container"><h3 id="made_gentle">Made Gentle</h3>
+                                                                        <p>Used for Wordmark and section headers.</p>
+                                                                            <img class="typography-img__headertext" src="imgs/section_title.png" alt="example of section title">
+                                                                            <p class="typography-code__header">How it started vs. how it's going</p></div>
+                                    <div class="design-container"><h3 id="links">Links</h3>
+                                                                        <a href="#">#AI</a> <a href="#">#Animation</a> <a href="#">#App</a> <a href="#">#Builder</a></div>
                                 </div>
                 <h2 id="header_atoms">Header Atoms</h2>
-                    <h3 id="wordmark">Wordmark</h3>
-                    <img src="imgs/wordmark.png" alt="example of Wordmark">
-                    <p class="header-wordmark">rob</p>
-                    <h3 id="nav-list">Nav List</h3>
-                    <img src="imgs/navlist.png" alt="example of navigation list">
-                    <ul class="header-navlist">
-                        <li class="header-navitem navitem--active">Home</li>
-                        <li class="header-navitem">About</li>
-                        <li class="header-navitem">Projects</li>
-                        <li class="header-navitem">Tools</li>
-                    </ul>
-                    <h3 id="contact">Contact</h3>
-                    <img src="imgs/contact.png" alt="example of contact button">
-                    <p class="header-contact">Contact</p>
-                <h2 id="header">Header</h2>
-                <img class="header-img" src="imgs/header.png" alt="example of header section">
-                <div class="header-code">
-                    <p class="header-wordmark">rob</p>
-                    <ul class="header-navlist">
-                        <li class="header-navitem navitem--active">Home</li>
-                        <li class="header-navitem">About</li>
-                        <li class="header-navitem">Projects</li>
-                        <li class="header-navitem">Tools</li>
-                    </ul>
-                    <p class="header-contact">Contact</p>
-                </div>
+                    <div class="design-container"><h3 id="wordmark">Wordmark</h3>
+                                        <img src="imgs/wordmark.png" alt="example of Wordmark">
+                                        <p class="header-wordmark">rob</p></div>
+                    <div class="design-container"><h3 id="nav-list">Nav List</h3>
+                                        <img src="imgs/navlist.png" alt="example of navigation list">
+                                        <ul class="header-navlist">
+                                            <li class="header-navitem navitem--active">Home</li>
+                                            <li class="header-navitem">About</li>
+                                            <li class="header-navitem">Projects</li>
+                                            <li class="header-navitem">Tools</li>
+                                        </ul></div>
+                    <div class="design-container"><h3 id="contact">Contact</h3>
+                                        <img src="imgs/contact.png" alt="example of contact button">
+                                        <p class="header-contact">Contact</p></div>
+                <div class="design-container"><h2 id="header">Header</h2>
+                                <img class="header-img" src="imgs/header.png" alt="example of header section">
+                                <div class="header-code">
+                                    <p class="header-wordmark">rob</p>
+                                    <ul class="header-navlist">
+                                        <li class="header-navitem navitem--active">Home</li>
+                                        <li class="header-navitem">About</li>
+                                        <li class="header-navitem">Projects</li>
+                                        <li class="header-navitem">Tools</li>
+                                    </ul>
+                                    <p class="header-contact">Contact</p>
+                                </div></div>
                 <h2 id="content_atoms">Content Atoms</h2>
                     <h3 id="buttons">Buttons</h3>
                     <img src="imgs/button1.png">
