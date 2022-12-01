@@ -24,6 +24,7 @@
 
 
 html {
+  --white: #fff;
   --light-gray: #F7F2F2;
   --gray: #EDE9E9;
   --dark-gray: #87888B;
@@ -38,6 +39,7 @@ html {
   --font-silka-regular: "silka";
   --font-silka-medium: "silka medium";
   --font-made-gentile: "made gentle";
+  --transparent-gray:rgb(237,237,237,0.6);
 }
 
 /************************* design system page designs *************************/
@@ -46,6 +48,10 @@ html {
 a{
   text-decoration: none;
   color: var(--snow);
+}
+
+a:hover{
+  color: var(--dark-gray);
 }
 
 h1{
@@ -73,64 +79,6 @@ h3{
 }
 
 /**** navigation bar ****/
-.wordmark{
-  font-family: "made gentle";
-  font-size: 40px;
-  color: var(--orange);
-}
-
-.nav-list{
-  list-style: none;
-  padding: 0;
-  font-size: 18px;
-  line-height: 36px;
-}
-
-.nav-sub{
-  list-style: none;
-  padding: 0;
-  margin-bottom: 30px;
-}
-
-.nav-item--header{
-  margin-bottom: 30px;
-}
-
-.nav-sub a{
-  color: var(--dark-gray);
-}
-
-.nav-container{
-  padding: 0px 24px;
-}
-
-/**** content designs ****/
-.content-container{
-  padding: 10px 24px;
-}
-
-.hero{
-
-}
-
-
-
-/*reference images sizes*/
-.typography-img__body{
-  width: 800px;
-}
-
-.typography-img__navtext{
-  width: 300px;
-}
-
-.typography-img__headertext{
-  width: 300px;
-}
-
-.header-img{
-  width: 500px;
-}
 
 .nav{
   position: fixed;
@@ -155,6 +103,60 @@ h3{
   box-shadow: 10px 5px 5px var(--gray);
 }
 
+.wordmark{
+  font-family: "made gentle";
+  font-size: 40px;
+  color: var(--orange);
+}
+
+.nav-list{
+  list-style: none;
+  padding: 0;
+  font-size: 18px;
+  line-height: 36px;
+}
+
+.nav-sub{
+  font-size: 14px;
+  list-style: none;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.nav-item--header{
+  margin-bottom: 30px;
+}
+
+.nav-container{
+  padding: 0px 24px;
+}
+
+.content-container{
+  padding: 10px 24px;
+}
+
+
+
+/*************************Typography*************************/
+/*reference images sizes*/
+
+.typography-img__body{
+  width: 800px;
+}
+
+.typography-img__navtext{
+  width: 300px;
+}
+
+.typography-img__headertext{
+  width: 300px;
+}
+
+.header-img{
+  width: 500px;
+}
+
+/*Typograohy CODE*/
 
 .typography-code__body{
   font-family: "silka";
@@ -177,10 +179,15 @@ h3{
   color: var(--orange);
 }
 
+/*************************Header*************************/
+
 .header-wordmark{
+  color: var(--orange);
   font-family: "made gentle";
   font-size: 40px;
-  color: var(--orange);
+}
+.header-wordmark:hover{
+  color: var(--red);
 }
 
 .header-navlist{
@@ -197,6 +204,7 @@ h3{
 
 .header-navitem{
   display: inline-block;
+  color: var(--black);
   padding: 8px 16px;
   background-color: var(--gray);
   border-radius: 24px;
@@ -214,6 +222,125 @@ h3{
   background-color: var(--light-gray);
   color: var(--black);
 }
+
+.header-code {
+  background-color: var(--light-gray);
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+/*************************Content Atoms*************************/
+.button-code{
+  display: inline-block;
+  background-color: var(--dark-black);
+  padding: 20px;
+}
+
+.button-text{
+  margin: 0 4px;
+}
+.button-icon{
+  margin: 0 4px;
+  width: 10px;
+}
+
+.button{
+  font-size: 15px;
+  font-family:"silka";
+  color: var(--black);
+  display: inline-flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--white);
+  outline: solid 1px var(--transparent-gray);
+  transition: outline 0.3s linear;
+  padding: 8px 10px;
+  border-radius: 24px;
+}
+.button:hover{
+  outline-width: 5px;
+}
+
+.button2{
+  font-family:"silka medium";
+    background-color: var(--gray);
+}
+
+.button3{
+    border: 2px solid var(--gray);
+}
+
+
+.button4{
+  background-color: var(--white);
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 100%;
+  outline: solid 1px var(--transparent-gray);
+    transition: outline 0.3s linear;
+}
+.button4:hover{
+  outline-width: 5px;
+}
+
+
+.button5{
+  font-family:"silka medium";
+  border: 2px solid var(--gray);
+}
+
+.button5-icon{
+  width: 15px;
+  margin: 0 4px;
+}
+
+/*************************Cards*************************/
+
+.card1{
+  background-color: var(--white);
+  border-radius: 32px;
+  padding: 40px 44px;
+  display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 600px;
+}
+
+.card1-cta{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.card2{
+  margin: 10px;
+  background-color: #6886c5;
+  height: 290px;
+    width: 290px;
+    border-radius: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+}
+
+
+.linkedin-logo{
+  width: 68px;
+}
+
+
+
+
+
 
 
 
