@@ -1,0 +1,41 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "silka";
+  src: url(fonts/silka-regular-webfont.woff);
+}
+
+@font-face{
+  font-family: "silka medium";
+  src: url(fonts/Silka-Medium.ttf);
+}
+
+@font-face {
+  font-family: "made gentle";
+  src: url(fonts/made_gentle.otf);
+}
+
+
+
+html {
+  --white: #fff;
+  --light-gray: #F7F2F2;
+  --gray: #EDE9E9;
+  --dark-gray: #87888B;
+  --cyan-gray: #8A949E;
+  --black: #0D1116;
+  --orange: #EC7B5B;
+  --red: #F44C1F;
+  --snow: #F0F2F8;
+  --onyx: #30363D;
+  --glossy-black: #0D1116;
+  --dark-black: #0A0C10;
+  --font-silka-regular: "silka";
+  --font-silka-medium: "silka medium";
+  --font-made-gentile: "made gentle";
+  --transparent-gray:rgb(237,237,237,0.6);
+}

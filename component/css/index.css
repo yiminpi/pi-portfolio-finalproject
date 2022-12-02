@@ -181,6 +181,8 @@ h3{
 
 /*************************Header*************************/
 
+/*header wordmark code*/
+
 .header-wordmark{
   color: var(--orange);
   font-family: "made gentle";
@@ -189,6 +191,8 @@ h3{
 .header-wordmark:hover{
   color: var(--red);
 }
+
+/*navigation list code*/
 
 .header-navlist{
   display: inline-flex;
@@ -214,6 +218,7 @@ h3{
   background-color: white;
 }
 
+/*contact button code*/
 
 .header-contact{
   display: inline-block;
@@ -222,6 +227,8 @@ h3{
   background-color: var(--light-gray);
   color: var(--black);
 }
+
+/*full header code*/
 
 .header-code {
   background-color: var(--light-gray);
@@ -233,6 +240,8 @@ h3{
 
 
 /*************************Content Atoms*************************/
+
+/*button universal code*/
 .button-code{
   display: inline-block;
   background-color: var(--dark-black);
@@ -247,6 +256,7 @@ h3{
   width: 10px;
 }
 
+/*button 1 code*/
 .button{
   font-size: 15px;
   font-family:"silka";
@@ -265,15 +275,21 @@ h3{
   outline-width: 5px;
 }
 
+
+/*button 2 code*/
+
 .button2{
   font-family:"silka medium";
-    background-color: var(--gray);
+  background-color: var(--gray);
 }
+
+/*button 3 code*/
 
 .button3{
-    border: 2px solid var(--gray);
+  border: 2px solid var(--gray);
 }
 
+/*button 4 code*/
 
 .button4{
   background-color: var(--white);
@@ -282,12 +298,13 @@ h3{
   padding: 10px;
   border-radius: 100%;
   outline: solid 1px var(--transparent-gray);
-    transition: outline 0.3s linear;
+  transition: outline 0.3s linear;
 }
 .button4:hover{
   outline-width: 5px;
 }
 
+/*button 5 code*/
 
 .button5{
   font-family:"silka medium";
@@ -301,6 +318,8 @@ h3{
 
 /*************************Cards*************************/
 
+/*card 1 code*/
+
 .card1{
   background-color: var(--white);
   border-radius: 32px;
@@ -313,23 +332,30 @@ h3{
 }
 
 .card1-cta{
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+.card1-header{
+  color: var(--black);
+  font-size: 24px;
+}
 
+/*card 2 code*/
 
 .card2{
+  position: relative;
   margin: 10px;
   background-color: #6886c5;
   height: 290px;
-    width: 290px;
-    border-radius: 32px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 16px;
+  width: 290px;
+  border-radius: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
 }
 
 
@@ -337,16 +363,42 @@ h3{
   width: 68px;
 }
 
+.linkedin-cta{
+  position: absolute;
+  bottom: 14px;
+  left: 14px;
+}
 
+/*card 3 code*/
 
+.card3 {
+  width: 650px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 36px 42px;
+  margin: 10px;
+  border-radius: 32px;
+  background: var(--white);
+  position: relative;
+}
 
+.card3-cta{
+  position: absolute;
+  top: 28px;
+  right: 28px;
+}
 
+.card3-reference{
+  width: 650px;
+}
 
+.avatar{
+  width: 120px;
+}
 
-
-
-
-
-
+.card3-header{
+  font-size: 45px;
+}
 
 
