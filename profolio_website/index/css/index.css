@@ -45,50 +45,7 @@ a {
   text-decoration: none;
 }
 
-.button{
-  font-size: 15px;
-  font-family:"silka";
-  color: var(--black);
-  display: inline-flex;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--white);
-  outline: solid 1px var(--transparent-gray);
-  transition: outline 0.3s linear;
-  padding: 8px 10px;
-  border-radius: 24px;
-}
-.button:hover{
-  outline-width: 5px;
-}
-.button-text{
-  margin: 0 4px;
-}
-.button-icon{
-  margin: 0 4px;
-  width: 10px;
-}
-
 /*************************Typography*************************/
-/*reference images sizes*/
-
-.typography-img__body{
-  width: 800px;
-}
-
-.typography-img__navtext{
-  width: 300px;
-}
-
-.typography-img__headertext{
-  width: 300px;
-}
-
-.header-img{
-  width: 500px;
-}
-
 /*Typograohy CODE*/
 
 .typography-code__body{
@@ -112,6 +69,9 @@ a {
   color: var(--orange);
 }
 
+.typography a:hover {
+  color: var(--red);
+}
 /*************************button code**************************/
 
 .button-text{
@@ -245,6 +205,7 @@ a {
 
 .home-grid{
   max-width: 1200px;
+  padding: 0 20px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -401,4 +362,12 @@ a {
 .contact-time{
 color: var(--black);
 font-size: 24px;
+}
+
+
+.footer{
+    text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
 }
