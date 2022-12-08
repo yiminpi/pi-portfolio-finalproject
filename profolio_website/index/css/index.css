@@ -247,7 +247,7 @@ a {
 .grid-box__location {
   order: 2;
   position: relative;
-  background-color: var(--gray);
+  background-color: #DED8D8;
 }
 .location-img{
   width: 100%;
@@ -271,9 +271,8 @@ a {
 
 
 .grid-box__linkedin {
-  order: 4;
+  order: 5;
   position: relative;
-  background-color: #6886c5;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -287,16 +286,15 @@ a {
 
 
 .grid-box__ins{
-  order: 5;
+  order: 4;
   position: relative;
-  background-color: #6886c5;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .ins-logo{
-  width: 68px;
+  width: 120px;
 }
 
 .grid-box_git{
