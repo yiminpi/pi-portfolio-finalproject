@@ -21,7 +21,7 @@
 
 
 
-html {
+body{
   --white: #fff;
   --light-gray: #F7F2F2;
   --gray: #EDE9E9;
@@ -30,10 +30,6 @@ html {
   --black: #0D1116;
   --orange: #EC7B5B;
   --red: #F44C1F;
-  --snow: #F0F2F8;
-  --onyx: #30363D;
-  --glossy-black: #0D1116;
-  --dark-black: #0A0C10;
   --font-silka-regular: "silka";
   --font-silka-medium: "silka medium";
   --font-made-gentile: "made gentle";
@@ -51,22 +47,42 @@ a {
   font-family: "silka";
   font-size: 16px;
   line-height: 28px;
+  color: var(--black);
 }
 
 
 .typography-code__nav{
   font-family: "silka medium";
   font-size: 16px;
+  color: var(--black);
 }
 
 .typography-code__header{
   font-family: "made gentle";
   font-size: 18px;
+  color: var(--black);
+
 }
 
 .typography_sub{
   color: var(--cyan-gray);
 }
+.week_header{
+  text-align: center;
+  color: var(--black);
+}
+
+.week_context{
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--dark-gray);
+}
+
+
+ul{
+  list-style: circle;
+}
+
 
 a{
   color: var(--orange);
@@ -76,6 +92,7 @@ a:hover {
   color: var(--red);
 }
 
+/************************* header *************************/
 /*header wordmark code*/
 
 .header-wordmark{
@@ -113,7 +130,7 @@ a:hover {
   color: var(--dark-gray);
 }
 .navitem--active{
-  background-color: white;
+  background-color: var(--white);
 }
 
 /*contact button code*/
@@ -220,7 +237,7 @@ a:hover {
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 280px);
+  grid-template-rows: repeat(3, 280px);
   grid-gap: 16px;
 }
 
@@ -252,9 +269,7 @@ a:hover {
 }
 .card-project{
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: 24px;
 }
 .card1{
   border-radius: 32px;
@@ -278,9 +293,6 @@ a:hover {
   font-size: 24px;
 }
 
-.ins-logo{
-  width: 120px;
-}
 
 .grid-box__wk1{
   order: 2;
@@ -331,4 +343,38 @@ a:hover {
 .contact-time{
 color: var(--black);
 font-size: 24px;
+}
+
+
+.footer{
+    text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+
+/*small screen setting*/
+@media (max-width: 900px) {
+  .header-code {
+    padding: 40px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .header-wordmark{
+    margin-bottom: 20px;
+  }
+  .header-contact{
+    display: none;
+  }
+  
+  .home-grid{
+    max-width: 570px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 280px);
+    grid-auto-flow: dense;
+  }
+
+
 }

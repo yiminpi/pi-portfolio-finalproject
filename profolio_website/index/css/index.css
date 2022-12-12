@@ -21,7 +21,7 @@
 
 
 
-html {
+body {
   --white: #fff;
   --light-gray: #F7F2F2;
   --gray: #EDE9E9;
@@ -30,15 +30,18 @@ html {
   --black: #0D1116;
   --orange: #EC7B5B;
   --red: #F44C1F;
-  --snow: #F0F2F8;
-  --onyx: #30363D;
-  --glossy-black: #0D1116;
-  --dark-black: #0A0C10;
   --font-silka-regular: "silka";
   --font-silka-medium: "silka medium";
   --font-made-gentile: "made gentle";
   --transparent-gray:rgb(237,237,237,0.6);
   background-color: var(--light-gray);
+}
+
+body.dark-mode{
+  --white: #21262d;
+  --black:#D2D4D7;
+  --light-gray:#0a0c10;
+  --gray: #21262d;
 }
 
 a {
@@ -47,22 +50,25 @@ a {
 
 /*************************Typography*************************/
 /*Typograohy CODE*/
-
 .typography-code__body{
   font-family: "silka";
   font-size: 16px;
   line-height: 28px;
+  color: var(--black);
 }
 
 
 .typography-code__nav{
   font-family: "silka medium";
   font-size: 16px;
+  color: var(--black);
 }
 
 .typography-code__header{
   font-family: "made gentle";
   font-size: 18px;
+  color: var(--black);
+
 }
 
 .typography_sub{
@@ -153,7 +159,7 @@ a:hover {
   margin: 0 4px;
 }
 
-
+/*************************header**************************/
 
 /*header wordmark code*/
 
@@ -191,7 +197,7 @@ a:hover {
   color: var(--dark-gray);
 }
 .navitem--active{
-  background-color: white;
+  background-color: var(--white);
 }
 
 /*contact button code*/
@@ -212,7 +218,7 @@ a:hover {
   align-items: center;
   justify-content: space-between;
 }
-
+/*************************grid*************************/
 .home-grid{
   max-width: 1200px;
   padding: 0 20px;
@@ -233,6 +239,8 @@ a:hover {
   order: 1;
   position: relative;
 }
+
+/*************************content**************************/
 .intro-card {
   height: 100%;
   width: 100%;
@@ -350,33 +358,51 @@ a:hover {
 
 .grid-box__switch{
   order: 8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button{
+  font-size: 15px;
+  font-family:"silka";
+  color: var(--black);
+  display: inline-flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--white);
+  outline: solid 1px var(--transparent-gray);
+  transition: outline 0.2s linear;
+  padding: 8px 10px;
+  border-radius: 24px;
 }
 
 .grid-box__webdevelop{
   order: 9;
-    grid-column: span 2;
-    position: relative;
+  grid-column: span 2;
+  position: relative;
   }
   
   
-  .funkudo-img{
-    width: 100%;
-    height: 100%;
-    border-radius: 32px;
+.funkudo-img{
+  width: 100%;
+  height: 100%;
+  border-radius: 32px;
   }
 .grid-box__contact{
   order: 10;
-    grid-column: span 2;
-    position: relative;
+  grid-column: span 2;
+  position: relative;
 }
 .contact-time{
 color: var(--black);
 font-size: 24px;
 }
-
+/*************************footer**************************/
 
 .footer{
-    text-align: center;
+  text-align: center;
   align-items: center;
   justify-content: center;
   padding: 40px;

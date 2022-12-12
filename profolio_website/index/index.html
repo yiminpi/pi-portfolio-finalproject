@@ -2,12 +2,12 @@
 <html lang="en-US">
    <head>
       <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" >
       <link href="css/normalize.css" rel="stylesheet">
       <link href="css/index.css" rel="stylesheet">
       <title>Yimin Pi|Designer, illustrator, and developer</title>
    </head>
-   <body>
+   <body class="dark">
       <header>
          <div class="header-code">
             <a class="header-wordmark" href="index.html">Pi</a>
@@ -91,7 +91,9 @@
                      </div>
                   </div>
                </div>
-               <div class="grid-box grid-box__switch"></div>
+               <div class="grid-box grid-box__switch">
+                  <button onclick="myFunction()">Toggle dark mode</button>
+               </div>
                <div class="grid-box grid-box__webdevelop">
                   <img class="funkudo-img" src="imgs/funkudo-img.jpg" alt="funkudo website image">
                   <a class="button cta-position" href="https://www.funkudo.com/">
@@ -126,7 +128,16 @@
       </footer>
       <script>
          var dt = new Date();
-         document.getElementById('date-time').innerHTML= new Date().toLocaleString("en-US",{timeZone:'America/Chicago',timeStyle:"short",hourCycle:"h24"});
-         </script>
+         document.getElementById('date-time').innerHTML = new Date().toLocaleString("en-US", {
+            timeZone: 'America/Chicago',
+            timeStyle: "short",
+            hourCycle: "h24"
+         });
+
+         function myFunction() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+         }
+      </script>
    </body>
 </html>

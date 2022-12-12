@@ -79,6 +79,7 @@ a:hover {
   color: var(--red);
 }
 
+/************************* Header *************************/
 /*header wordmark code*/
 
 .header-wordmark{
@@ -138,7 +139,7 @@ a:hover {
   justify-content: space-between;
 }
 
-
+/************************* page setup *************************/
 .page-wrapper{
   max-width: 1200px;
   margin: 0 auto;
@@ -152,7 +153,7 @@ a:hover {
   margin-bottom: 16px;
 }
 
-
+/************************* main content *************************/
 .profile{
   display: inline-flex;
   align-items: center;
@@ -193,7 +194,7 @@ a:hover {
 .experience-text{
   padding: 8px 0;
 }
-
+/************************* Footer *************************/
 
 .footer{
   text-align: center;
